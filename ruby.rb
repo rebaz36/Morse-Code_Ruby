@@ -39,9 +39,11 @@ end
 
 # end of decode_char function
 
+# Test Cases
 puts decode_char(".-") # returns "A"
 puts decode_char("--.") # returns "G"
 puts decode_char("---") # returns "O"
+# end of test cases
 
 # Decode Word Function
 def decode_word(morse_word)
@@ -57,10 +59,12 @@ end
 
 # end of decode_word function
 
+# Test Cases
 puts decode_word(".- .-.. .-..") # returns "ALL"
 puts decode_word("--. --- --- -..") # returns "GOOD"
 puts decode_word("--- -.") # returns "ON"
 puts decode_word("- ---") # returns "TO"
+# end of test cases
 
 # Decode Message Function
 def decode_message(morse_message)
@@ -72,5 +76,10 @@ end
 return decoded_message.strip
 end
 # end of decode_message function
+
+# Test Cases
 puts decode_message(".- .-.. .-..   --. --- --- -..   --- -.   - ---") # returns "ALL GOOD ON TO"
-puts decode_message("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+# end of test cases
+
+# Final Test Case solving the question
+puts decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...") # returns "A BOX FULL OF RUBIES"
