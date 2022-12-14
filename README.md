@@ -33,7 +33,7 @@ This project is a command line application that takes a morse code and turns it 
 
 # 📖 MORSE-CODE_RUBY <a name="about-project"></a>
 
-**Vet Clinic Database** updated upon project completion.
+**MORSE-CODE_RUBY** updated upon project completion.
 
 ## 🛠 Built With <a name="built-with"></a>
 
