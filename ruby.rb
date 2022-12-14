@@ -61,3 +61,16 @@ puts decode_word(".- .-.. .-..") # returns "ALL"
 puts decode_word("--. --- --- -..") # returns "GOOD"
 puts decode_word("--- -.") # returns "ON"
 puts decode_word("- ---") # returns "TO"
+
+# Decode Message Function
+def decode_message(morse_message)
+morse_words = morse_message.split("   ")
+decoded_message = ""
+morse_words.each do |word|
+decoded_message += decode_word(word) + " "
+end
+return decoded_message.strip
+end
+# end of decode_message function
+puts decode_message(".- .-.. .-..   --. --- --- -..   --- -.   - ---") # returns "ALL GOOD ON TO"
+puts decode_message("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
